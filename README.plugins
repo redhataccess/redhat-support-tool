@@ -1,0 +1,32 @@
+Vendor Plugins for Red Hat Support Tool 0.9.4+
+==============================================
+
+--------
+Location
+--------
+At present vendor plugins must be located in the redhat-support-tool vendor plugins directory, at present the directory is located in the following locations:
+
+ * Red Hat Enterprise Linux 5: /usr/lib/python2.4/site-packages/redhat_support_tool/vendors/
+ * Red Hat Enterprise Linux 6: /usr/lib/python2.6/site-packages/redhat_support_tool/vendors/
+ * Red Hat Enterprise Linux 7: /usr/lib/python2.7/site-packages/redhat_support_tool/vendors/
+
+----------------
+Plugin Structure
+----------------
+At a minimum a plugin must contain an __init__.py file, with the lists 'provided_modules' and 'ignored_modules' set.
+
+Both lists should only contain text references to the __name__ built-in for the relevant plugin-module.
+
+It is not possible to ignore other vendor plugins using this method.
+
+------------------
+Defining a Command
+------------------
+For a command to be included, a class inheriting the 'Plugin' or 'InteractivePlugin' classes provided by redhat_support_tool.plugins must exist, and the file containing the class must be added to the provided_modules list.
+
+The command class must override the variable 'plugin_name' with the name used in the application.  The plugin_name variable cannot contain hyphens or special characters.
+
+-------
+Example
+-------
+An 'ACMECorp' example plugin is included within the samples/ directory with this file.

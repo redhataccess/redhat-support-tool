@@ -1,0 +1,24 @@
+== Introduction ==
+
+A utility which enables:
+- Console access to Red Hat KBs.
+- Searching for KBs via the console.
+- Automatic log file analysis.
+- Case viewing.
+- Commenting on cases.
+- Downloading of case attachments.
+
+== Installation ==
+
+Installation from the source directory:
+
+ $ python setup.py build
+ # python setup.py install
+ 
+ or
+ 
+ # python setup.py develop
+
+== Usage ==
+
+Type: redhat-support-tool help

@@ -1,0 +1,1080 @@
+<?xml version="1.0"?>
+<report xmlns="http://www.redhat.com/gss/strata">
+	<binding name="localhash">b89f6a94b52d146635f8e78e040e80dd868774d889ef312b4e158b42745bec1f
+	</binding>
+	<binding name="product">Red Hat Enterprise Linux</binding>
+	<binding name="description">The following was filed automatically by
+		anaconda:
+		anaconda 13.21.82 exception report
+		Traceback (most recent call first):
+		File "/tmp/updates/iw/welcome_gui.py", line 37, in __init__
+		raise Exception("This failure intentionally triggered")
+		File "/tmp/updates/gui.py", line 1426, in setScreen
+		self.currentWindow = newScreenClass(ics)
+		File "/tmp/updates/gui.py", line 1560, in setup_window
+		self.setScreen()
+		File "/tmp/updates/gui.py", line 1573, in run
+		self.setup_window(runres)
+		File "/tmp/updates/gui.py", line 1298, in run
+		self.icw.run (self.runres)
+		File "/usr/bin/anaconda", line 1115, in &lt;module&gt;
+		anaconda.intf.run(anaconda)
+		Exception: This failure intentionally triggered
+	</binding>
+	<binding fileName="/tmp/anaconda-tb-bBtGXu" name="pythonUnhandledException"
+		type="text">anaconda 13.21.82 exception report
+		Traceback (most recent call first):
+		File "/tmp/updates/iw/welcome_gui.py", line 37, in __init__
+		raise Exception("This failure intentionally triggered")
+		File "/tmp/updates/gui.py", line 1426, in setScreen
+		self.currentWindow = newScreenClass(ics)
+		File "/tmp/updates/gui.py", line 1560, in setup_window
+		self.setScreen()
+		File "/tmp/updates/gui.py", line 1573, in run
+		self.setup_window(runres)
+		File "/tmp/updates/gui.py", line 1298, in run
+		self.icw.run (self.runres)
+		File "/usr/bin/anaconda", line 1115, in &lt;module&gt;
+		anaconda.intf.run(anaconda)
+		Exception: This failure intentionally triggered
+
+		Local variables in innermost frame:
+		ics: &lt;gui.InstallControlState instance at 0x7f5a93039fc8&gt;
+		self: &lt;WelcomeWindow.WelcomeWindow instance at 0x7f5aa36c75a8&gt;
+
+
+		Anaconda instance, containing members:
+		intf: InstallInterface instance, containing members:
+		intf.runres: 800x600
+		intf._initLabelAnswers: {}
+		intf._warnedUnusedRaidMembers: []
+		intf.anaconda: Already dumped (Anaconda instance)
+		intf.icw: InstallControlWindow instance, containing members:
+		intf.icw.handle: None
+		intf.icw.currentWindow: None
+		intf.icw.mainxml: XML instance, containing members:
+		intf.icw.window: Window instance, containing members:
+		intf.icw.installFrame: Frame instance, containing members:
+		intf.icw.anaconda: Already dumped (Anaconda instance)
+		intf.icw.reloadRcQueued: 0
+		intf._inconsistentLVMAnswers: {}
+		updateSrc: None
+		clearPartTypeSystem: None
+		dispatch: Dispatcher instance, containing members:
+		dispatch.step: 0
+		dispatch.skipSteps: {'upgradecontinue': 1, 'group-selection': 1, 'findinstall': 1,
+		'upgrademigfind': 1, 'upgradeswapsuggestion': 1, 'partition': 1,
+		'betanag': 2, 'upgrademount': 1, 'upgbootloader': 1, 'addswap': 1,
+		'upgrademigratefs': 1}
+		dispatch.firstStep: 0
+		dispatch.anaconda: Already dumped (Anaconda instance)
+		reIPLMessage: None
+		id: InstallData instance, containing members:
+		id.firewall: Firewall instance, containing members:
+		id.firewall.portlist: []
+		id.firewall.servicelist: []
+		id.firewall.trustdevs: []
+		id.firewall.enabled: 1
+		id.anaconda: Already dumped (Anaconda instance)
+		id.upgradeRoot: None
+		id.keyboard: Keyboard instance, containing members:
+		id.keyboard.config: [['KEYTABLE="us"\n', 'KEYTABLE', 'us']
+		, ['MODEL="pc105+inet"\n', 'MODEL', 'pc105+inet']
+		, ['LAYOUT="us"\n', 'LAYOUT', 'us']
+		, ['KEYBOARDTYPE="pc"\n', 'KEYBOARDTYPE', 'pc']
+		]
+		id.keyboard.type: PC
+		id.keyboard._mods: KeyboardModels instance, containing members:
+		id.keyboard._mods._modelDict: Skipped
+		id.keyboard.beenset: 0
+		id.timezone: Timezone instance, containing members:
+		id.timezone.utc: 0
+		id.timezone.tz: America/New_York
+		id.backend: YumBackend instance, containing members:
+		id.backend.modeText:
+		id.backend.instPath: /mnt/sysimage
+		id.backend.skipFormatRoot: False
+		id.backend.instLog: None
+		id.backend.supportsUpgrades: True
+		id.backend._loopbackFile: None
+		id.backend.rootFsType: None
+		id.backend.supportsPackageSelection: True
+		id.upgrade: None
+		id.monitor: None
+		id.escrowCertificates: {}
+		id.storage: Storage instance, containing members:
+		id.storage.clearPartType: None
+		id.storage.clearPartChoice: None
+		id.storage.ignoredDisks: []
+		id.storage.fsset: FSSet instance, containing members:
+		id.storage.fsset.origFStab: None
+		id.storage.fsset.devicetree: DeviceTree instance, containing members:
+		id.storage.fsset.devicetree.clearPartType: None
+		id.storage.fsset.devicetree._ignoredDisks: []
+		id.storage.fsset.devicetree.intf: Already dumped (InstallInterface
+		instance)
+		id.storage.fsset.devicetree.dasd: DASD instance, containing members:
+		id.storage.fsset.devicetree.dasd.dasdfmt: /sbin/dasdfmt
+		id.storage.fsset.devicetree.dasd.commonArgv: [-y, -d, cdl, -b, 4096]
+		id.storage.fsset.devicetree.dasd.started: False
+		id.storage.fsset.devicetree.dasd.totalCylinders: 0
+		id.storage.fsset.devicetree.dasd._maxFormatJobs: 0
+		id.storage.fsset.devicetree.dasd._devices: []
+		id.storage.fsset.devicetree.dasd._completedCylinders: 0.0
+		id.storage.fsset.devicetree.dasd._dasdlist: []
+		id.storage.fsset.devicetree.populated: False
+		id.storage.fsset.devicetree.exclusiveDisks: []
+		id.storage.fsset.devicetree.clearPartDisks: []
+		id.storage.fsset.devicetree.iscsi: iscsi instance, containing members:
+		id.storage.fsset.devicetree.iscsi.started: False
+		id.storage.fsset.devicetree.iscsi.initiatorSet: False
+		id.storage.fsset.devicetree.iscsi.nodes: []
+		id.storage.fsset.devicetree.iscsi.ibftNodes: []
+		id.storage.fsset.devicetree.iscsi._initiator:
+		id.storage.fsset.devicetree.reinitializeDisks: False
+		id.storage.fsset.devicetree._devices: []
+		id.storage.fsset.devicetree.protectedDevNames: []
+		id.storage.fsset.devicetree.zeroMbr: None
+		id.storage.fsset.devicetree.unusedRaidMembers: []
+		id.storage.fsset.devicetree._actions: []
+		id.storage.fsset.devicetree.protectedDevSpecs: []
+		id.storage.fsset.preserveLines: []
+		id.storage.fsset.rootpath: /mnt/sysimage
+		id.storage.fsset._devshm: None
+		id.storage.fsset._dev: None
+		id.storage.fsset.blkidTab: None
+		id.storage.fsset._proc: None
+		id.storage.fsset.active: False
+		id.storage.fsset.cryptTab: None
+		id.storage.fsset._devpts: None
+		id.storage.fsset._sysfs: None
+		id.storage.anaconda: Already dumped (Anaconda instance)
+		id.storage.zeroMbr: None
+		id.storage.clearPartDisks: []
+		id.storage.autoPartEscrowCert: None
+		id.storage.dasd: Already dumped (DASD instance)
+		id.storage.autoPartAddBackupPassphrase: False
+		id.storage.ignoreDiskInteractive: False
+		id.storage.devicetree: Already dumped (DeviceTree instance)
+		id.storage.eddDict: {}
+		id.storage.zfcp: ZFCP instance, containing members:
+		id.storage.zfcp.down: True
+		id.storage.zfcp.hasReadConfig: False
+		id.storage.zfcp.intf: None
+		id.storage.zfcp.fcpdevs: set([])
+		id.storage.exclusiveDisks: []
+		id.storage.defaultFSType: ext4
+		id.storage._dumpFile: /tmp/storage.state
+		id.storage.services: set([])
+		id.storage.encryptionPassphrase: None
+		id.storage.encryptionRetrofit: False
+		id.storage._nextID: 0
+		id.storage.reinitializeDisks: False
+		id.storage.defaultBootFSType: ext4
+		id.storage.fcoe: fcoe instance, containing members:
+		id.storage.fcoe.started: False
+		id.storage.fcoe.nics: []
+		id.storage.fcoe.lldpadStarted: False
+		id.storage.autoPartitionRequests: [PartSpec instance (0x7f5a9c30af10) --
+		mountpoint = / asVol = True
+		weight = 0 fstype = ext4
+		size = 1024 maxSize = 51200 grow = True
+
+		, PartSpec instance (0x7f5a9c30ad90) --
+		mountpoint = /home asVol = True
+		weight = 0 fstype = ext4
+		size = 100 maxSize = None grow = True
+
+		, PartSpec instance (0x7f5a9c30afd0) --
+		mountpoint = /boot asVol = False
+		weight = 2000 fstype = ext4
+		size = 500 maxSize = None grow = False
+
+		, PartSpec instance (0x7f5a9c31b9d0) --
+		mountpoint = None asVol = True
+		weight = 0 fstype = swap
+		size = 1008 maxSize = 2016 grow = True
+
+		]
+		id.storage.doAutoPart: False
+		id.storage.protectedDevSpecs: []
+		id.storage.iscsi: Already dumped (iscsi instance)
+		id.storage.encryptedAutoPart: False
+		id.desktop: Desktop instance, containing members:
+		id.desktop.info: {}
+		id.desktop.runlevel: 3
+		id.rootParts: None
+		id.x_already_set: 0
+		id.firstboot: 0
+		id.users: None
+		id.displayMode: g
+		id.auth: --enableshadow --passalgo=sha512 --enablefingerprint
+		id.simpleFilter: True
+		id.ksdata: None
+		id.bootloader: x86BootloaderInfo instance, containing members:
+		id.bootloader._configdir: /boot/grub
+		id.bootloader.doUpgradeOnly: 0
+		id.bootloader.above1024: 0
+		id.bootloader.defaultDevice: None
+		id.bootloader.pure: None
+		id.bootloader.kickstart: 0
+		id.bootloader._drivelist: None
+		id.bootloader.storage: Already dumped (Storage instance)
+		id.bootloader._efiProductPath: None
+		id.bootloader.args: KernelArguments instance, containing members:
+		id.bootloader.args.args:
+		id.bootloader.args.appendArgs: crashkernel=auto
+		id.bootloader.args.id: Already dumped (InstallData instance)
+		id.bootloader.kernelLocation: /boot/
+		id.bootloader.timeout: 5
+		id.bootloader._configname: grub.conf
+		id.bootloader.device: None
+		id.bootloader.serialOptions: None
+		id.bootloader.useGrubVal: 1
+		id.bootloader.serialDevice: None
+		id.bootloader.images: BootImages instance, containing members:
+		id.bootloader.images.default: None
+		id.bootloader.images.images: {}
+		id.bootloader.serial: 0
+		id.bootloader.password: None
+		id.extraModules: []
+		id.network: Network instance, containing members:
+		id.network.netdevices: {'eth0': DEVICE="eth0"
+		HWADDR="52:54:00:5C:89:A7"
+		NM_CONTROLLED="yes"
+		ONBOOT="no"
+
+		}
+		id.network.ksdevice: None
+		id.network.overrideDHCPhostname: False
+		id.network.hostname: localhost.localdomain
+		id.network.domains: []
+		id.instClass: DefaultInstall instance, containing members:
+		id.isHeadless: 0
+		id.videocard: None
+		id.instLanguage: Language instance, containing members:
+		id.instLanguage.info: Skipped
+		id.instLanguage.nativeLangNames: Skipped
+		id.instLanguage._instLang: en_US.UTF-8
+		id.instLanguage.displayMode: g
+		id.instLanguage._systemLang: en_US.UTF-8
+		id.instLanguage._default: en_US.UTF-8
+		id.instLanguage.localeInfo: Skipped
+		id.rootPassword: Skipped
+		id.security: Security instance, containing members:
+		id.security.selinux: 1
+		id.upgradeSwapInfo: None
+		backend: Already dumped (YumBackend instance)
+		mediaDevice: None
+		methodstr: None
+		proxyPassword: None
+		platform: X86 instance, containing members:
+		platform._diskLabelType: msdos
+		platform.anaconda: Already dumped (Anaconda instance)
+		canReIPL: False
+		xdriver: None
+		stage2: cdrom:///dev/sr0:/mnt/stage2
+		rescue_mount: True
+		rescue: False
+		proxyUsername: None
+		mehConfig: Config instance, containing members:
+		mehConfig.programName: anaconda
+		mehConfig.programVersion: 13.21.82
+		mehConfig.attrSkipList: [backend.ayum, backend.dlpkgs, id.accounts, id.bootloader.password,
+		id.comps, id.dispatch, id.hdList, id.ksdata, id.instLanguage.font,
+		id.instLanguage.kbd, id.instLanguage.info, id.instLanguage.localeInfo,
+		id.instLanguage.nativeLangNames, id.instLanguage.tz,
+		id.keyboard._mods._modelDict, id.keyboard.modelDict,
+		id.storage.encryptionPassphrase, id.rootPassword, id.tmpData,
+		intf.icw.buff, intf.icw.currentWindow.storage.encryptionPassphrase,
+		intf.icw.stockButtons]
+		mehConfig.localSkipList: [passphrase, password]
+		mehConfig.fileList: [/tmp/anaconda.log, /tmp/lvmout, /tmp/resize.out, /tmp/program.log,
+		/tmp/storage.log, /tmp/yum.log, /mnt/sysimage/root/install.log,
+		/mnt/sysimage/root/upgrade.log, /proc/cmdline, /tmp/syslog]
+		clearPartTypeSelection: None
+		rootPath: /mnt/sysimage
+		isKickstart: False
+		dir: 1
+		proxy: None
+
+
+		/tmp/anaconda.log:
+		21:07:55,565 INFO : kernel command line: initrd=initrd.img updates
+		BOOT_IMAGE=vmlinuz
+
+		21:07:55,565 DEBUG : readNetInfo /tmp/s390net not found, early return
+		21:07:55,565 INFO : anaconda version 13.21.82 on x86_64 starting
+		21:07:55,614 INFO : 1021380 kB are available
+		21:07:55,713 DEBUG : Saving module ipv6
+		21:07:55,713 DEBUG : Saving module iscsi_ibft
+		21:07:55,713 DEBUG : Saving module pcspkr
+		21:07:55,713 DEBUG : Saving module floppy
+		21:07:55,713 DEBUG : Saving module iscsi_tcp
+		21:07:55,713 DEBUG : Saving module libiscsi_tcp
+		21:07:55,713 DEBUG : Saving module libiscsi
+		21:07:55,713 DEBUG : Saving module scsi_transport_iscsi
+		21:07:55,713 DEBUG : Saving module squashfs
+		21:07:55,713 DEBUG : Saving module cramfs
+		21:07:55,714 DEBUG : probing buses
+		21:07:55,765 DEBUG : waiting for hardware to initialize
+		21:07:56,077 INFO : Trying to detect vendor driver discs
+		21:07:56,489 DEBUG : probing buses
+		21:07:56,543 DEBUG : waiting for hardware to initialize
+		21:07:57,641 INFO : trying to mount CD device /dev/sr0 on /mnt/stage2
+		21:07:57,643 INFO : drive status is CDS_DISC_OK
+		21:08:02,469 INFO : mounted loopback device /mnt/runtime on /dev/loop0 as
+		/mnt/stage2/images/install.img
+		21:08:02,469 INFO : Looking for updates in /mnt/stage2/images/updates.img
+		21:08:02,469 INFO : Looking for product in
+		/mnt/stage2/images/product.img
+		21:08:02,485 INFO : mounted loopback device /tmp/product-disk on /dev/loop7 as
+		/mnt/stage2/images/product.img
+		21:08:02,510 INFO : umounting loopback /tmp/product-disk /dev/loop7
+		21:08:02,510 ERROR : LOOP_CLR_FD failed for /tmp/product-disk /dev/loop7: No such
+		device or address
+		21:08:02,510 INFO : Detected stage 2 image on CD (url:
+		cdrom:///dev/sr0:/mnt/stage2)
+		21:08:05,513 INFO : starting STEP_METHOD
+		21:08:05,513 DEBUG : loaderData-&gt;method is set, adding skipMethodDialog
+		21:08:05,513 DEBUG : skipMethodDialog is set
+		21:08:05,514 INFO : stage2 url is cdrom:///dev/sr0:/mnt/stage2
+		21:08:05,556 INFO : Loading SELinux policy
+		21:08:06,009 INFO : getting ready to spawn shell now
+		21:08:06,011 DEBUG : Considering device ram0 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram1 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram2 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram3 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram4 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram5 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram6 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram7 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram8 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram9 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram10 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram11 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram12 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram13 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram14 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device ram15 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device loop0 (isremovable: 0)
+		21:08:06,011 DEBUG : Considering device fd0 (isremovable: 1)
+		21:08:06,011 DEBUG : Considering device sr0 (isremovable: 1)
+		21:08:06,011 DEBUG : Considering device vda (isremovable: 0)
+		21:08:10,339 INFO : UPDATES device is /dev/fd0
+		21:08:11,213 INFO : Running anaconda script /usr/bin/anaconda
+		21:08:12,868 INFO : using only installclass Red Hat Enterprise Linux Server
+		21:08:12,873 INFO : created new libuser.conf at /tmp/libuser.Ky4BM8
+		with instPath="/mnt/sysimage"
+		21:08:12,874 INFO : anaconda called with cmdline = ['/usr/bin/anaconda',
+		'--stage2', 'cdrom:///dev/sr0:/mnt/stage2', '--dlabel', '--graphical',
+		'--selinux']
+		21:08:12,874 INFO : Display mode = g
+		21:08:12,874 INFO : Default encoding = utf-8
+		21:08:13,825 DEBUG : X server has signalled a successful start.
+		21:08:13,829 INFO : Started window manager, pid 634.
+		21:08:13,839 WARNING : '/usr/bin/metacity' specified as full path
+		21:08:13,921 INFO : Starting graphical installation.
+		21:08:14,135 INFO : Detected 1008M of memory
+		21:08:14,135 INFO : Swap attempt of 1008M to 2016M
+		21:08:14,182 WARNING : step installtype does not exist
+		21:08:14,183 WARNING : step confirminstall does not exist
+		21:08:14,183 WARNING : step complete does not exist
+		21:08:14,464 INFO : moving (1) to step welcome
+
+
+		/tmp/program.log:
+		Running... /bin/mount -n -t iso9660 -o ro /dev/sr0 /mnt/stage2
+		Running... /bin/mount -n -t auto -o ro,loop=/dev/loop0
+		/mnt/stage2/images/install.img /mnt/runtime
+		Running... /bin/mount -n -t auto -o ro,loop=/dev/loop7
+		/mnt/stage2/images/product.img /tmp/product-disk
+		Running... /bin/mount -n -t auto -o ro /dev/fd0 /tmp/update-disk
+		21:08:12,408 INFO : Running... ['udevadm', 'trigger', '--action=add',
+		'--subsystem-match=net']
+		21:08:12,426 INFO : Running... ['udevadm', 'settle', '--timeout=300']
+		21:08:12,498 INFO : Running... ['udevadm', 'trigger', '--action=add',
+		'--subsystem-match=net']
+		21:08:12,512 INFO : Running... ['udevadm', 'settle', '--timeout=300']
+		21:08:13,840 INFO : Running... ['/usr/bin/metacity', '--display', ':1',
+		'--sm-disable']
+		21:08:14,016 ERROR : Window manager warning: 0 stored in GConf key
+		/desktop/gnome/peripherals/mouse/cursor_size is out of range 1 to 128
+
+
+		/tmp/storage.log:
+		21:08:11,878 DEBUG : registered device format class DiskLabel as disklabel
+		21:08:11,879 DEBUG : registered device format class DMRaidMember as
+		dmraidmember
+		21:08:11,970 DEBUG : registered device format class Ext2FS as ext2
+		21:08:11,970 DEBUG : registered device format class Ext3FS as ext3
+		21:08:11,970 DEBUG : registered device format class Ext4FS as ext4
+		21:08:11,971 DEBUG : registered device format class FATFS as vfat
+		21:08:11,971 DEBUG : registered device format class EFIFS as efi
+		21:08:11,971 DEBUG : registered device format class BTRFS as btrfs
+		21:08:11,971 DEBUG : registered device format class GFS2 as gfs2
+		21:08:11,972 DEBUG : registered device format class JFS as jfs
+		21:08:11,972 DEBUG : registered device format class ReiserFS as reiserfs
+		21:08:11,972 DEBUG : registered device format class XFS as xfs
+		21:08:11,972 DEBUG : registered device format class HFS as hfs
+		21:08:11,972 DEBUG : registered device format class AppleBootstrapFS
+		as appleboot
+		21:08:11,973 DEBUG : registered device format class HFSPlus as hfs+
+		21:08:11,973 DEBUG : registered device format class NTFS as ntfs
+		21:08:11,973 DEBUG : registered device format class NFS as nfs
+		21:08:11,973 DEBUG : registered device format class NFSv4 as nfs4
+		21:08:11,973 DEBUG : registered device format class Iso9660FS as iso9660
+		21:08:11,974 DEBUG : registered device format class NoDevFS as nodev
+		21:08:11,974 DEBUG : registered device format class DevPtsFS as devpts
+		21:08:11,974 DEBUG : registered device format class ProcFS as proc
+		21:08:11,974 DEBUG : registered device format class SysFS as sysfs
+		21:08:11,974 DEBUG : registered device format class TmpFS as tmpfs
+		21:08:11,974 DEBUG : registered device format class BindFS as bind
+		21:08:12,016 DEBUG : registered device format class LUKS as luks
+		21:08:12,017 DEBUG : registered device format class LVMPhysicalVolume
+		as lvmpv
+		21:08:12,019 DEBUG : registered device format class MDRaidMember as mdmember
+		21:08:12,020 DEBUG : registered device format class MultipathMember as
+		multipath_member
+		21:08:12,020 DEBUG : registered device format class PPCPRePBoot as prepboot
+		21:08:12,023 DEBUG : registered device format class SwapSpace as swap
+
+
+		/proc/cmdline:
+		initrd=initrd.img updates BOOT_IMAGE=vmlinuz
+
+
+		/tmp/syslog:
+		&lt;6&gt;Initializing cgroup subsys cpuset
+		&lt;6&gt;Initializing cgroup subsys cpu
+		&lt;5&gt;Linux version 2.6.32-71.el6.x86_64 (mockbuild@x86-007.build.bos.redhat.com)
+		(gcc version 4.4.4 20100726 (Red Hat 4.4.4-13) (GCC) ) #1 SMP Wed Sep
+		1 01:33:01 EDT 2010
+		&lt;6&gt;Command line: initrd=initrd.img updates BOOT_IMAGE=vmlinuz
+		&lt;6&gt;KERNEL supported cpus:
+		&lt;6&gt; Intel GenuineIntel
+		&lt;6&gt; AMD AuthenticAMD
+		&lt;6&gt; Centaur CentaurHauls
+		&lt;6&gt;BIOS-provided physical RAM map:
+		&lt;6&gt; BIOS-e820: 0000000000000000 - 000000000009f400 (usable)
+		&lt;6&gt; BIOS-e820: 000000000009f400 - 00000000000a0000 (reserved)
+		&lt;6&gt; BIOS-e820: 00000000000f0000 - 0000000000100000 (reserved)
+		&lt;6&gt; BIOS-e820: 0000000000100000 - 000000003fffd000 (usable)
+		&lt;6&gt; BIOS-e820: 000000003fffd000 - 0000000040000000 (reserved)
+		&lt;6&gt; BIOS-e820: 00000000fffbc000 - 0000000100000000 (reserved)
+		&lt;6&gt;DMI 2.4 present.
+		&lt;7&gt;e820 update range: 0000000000000000 - 0000000000001000 (usable) ==&gt;
+		(reserved)
+		&lt;7&gt;e820 remove range: 00000000000a0000 - 0000000000100000 (usable)
+		&lt;6&gt;last_pfn = 0x3fffd max_arch_pfn = 0x400000000
+		&lt;7&gt;MTRR default type: write-back
+		&lt;7&gt;MTRR fixed ranges enabled:
+		&lt;7&gt; 00000-9FFFF write-back
+		&lt;7&gt; A0000-BFFFF uncachable
+		&lt;7&gt; C0000-FFFFF write-protect
+		&lt;7&gt;MTRR variable ranges enabled:
+		&lt;7&gt; 0 base 00E0000000 mask FFE0000000 uncachable
+		&lt;7&gt; 1 disabled
+		&lt;7&gt; 2 disabled
+		&lt;7&gt; 3 disabled
+		&lt;7&gt; 4 disabled
+		&lt;7&gt; 5 disabled
+		&lt;7&gt; 6 disabled
+		&lt;7&gt; 7 disabled
+		&lt;6&gt;PAT not supported by CPU.
+		&lt;7&gt;initial memory mapped : 0 - 20000000
+		&lt;6&gt;init_memory_mapping: 0000000000000000-000000003fffd000
+		&lt;7&gt; 0000000000 - 003fe00000 page 2M
+		&lt;7&gt; 003fe00000 - 003fffd000 page 4k
+		&lt;7&gt;kernel direct mapping tables up to 3fffd000 @ 8000-b000
+		&lt;6&gt;RAMDISK: 3e330000 - 3ffdb9cc
+		&lt;4&gt;ACPI: RSDP 00000000000f7f80 00014 (v00 BOCHS )
+		&lt;4&gt;ACPI: RSDT 000000003fffde10 00034 (v01 BOCHS BXPCRSDT 00000001 BXPC
+		00000001)
+		&lt;4&gt;ACPI: FACP 000000003ffffe40 00074 (v01 BOCHS BXPCFACP 00000001 BXPC
+		00000001)
+		&lt;4&gt;ACPI: DSDT 000000003fffdfd0 01E22 (v01 BXPC BXDSDT 00000001 INTL 20090123)
+		&lt;4&gt;ACPI: FACS 000000003ffffe00 00040
+		&lt;4&gt;ACPI: SSDT 000000003fffdf80 00044 (v01 BOCHS BXPCSSDT 00000001 BXPC
+		00000001)
+		&lt;4&gt;ACPI: APIC 000000003fffde90 0007A (v01 BOCHS BXPCAPIC 00000001 BXPC
+		00000001)
+		&lt;4&gt;ACPI: HPET 000000003fffde50 00038 (v01 BOCHS BXPCHPET 00000001 BXPC
+		00000001)
+		&lt;7&gt;ACPI: Local APIC address 0xfee00000
+		&lt;6&gt;No NUMA configuration found
+		&lt;6&gt;Faking a node at 0000000000000000-000000003fffd000
+		&lt;6&gt;Bootmem setup node 0 0000000000000000-000000003fffd000
+		&lt;6&gt; NODE_DATA [0000000000009000 - 000000000003cfff]
+		&lt;6&gt; bootmap [000000000003d000 - 0000000000044fff] pages 8
+		&lt;6&gt;(7 early reservations) ==&gt; bootmem [0000000000 - 003fffd000]
+		&lt;6&gt; #0 [0000000000 - 0000001000] BIOS data page ==&gt;
+		[0000000000 - 0000001000]
+		&lt;6&gt; #1 [0000006000 - 0000008000] TRAMPOLINE ==&gt; [0000006000 -
+		0000008000]
+		&lt;6&gt; #2 [0001000000 - 0001c9eff8] TEXT DATA BSS ==&gt; [0001000000 -
+		0001c9eff8]
+		&lt;6&gt; #3 [003e330000 - 003ffdb9cc] RAMDISK ==&gt; [003e330000 - 003ffdb9cc]
+		&lt;6&gt; #4 [000009f400 - 0000100000] BIOS reserved ==&gt;
+		[000009f400 - 0000100000]
+		&lt;6&gt; #5 [0001c9f000 - 0001c9f071] BRK ==&gt; [0001c9f000 - 0001c9f071]
+		&lt;6&gt; #6 [0000008000 - 0000009000] PGTABLE ==&gt; [0000008000 -
+		0000009000]
+		&lt;6&gt;found SMP MP-table at [ffff8800000f7fd0] f7fd0
+		&lt;6&gt;kvm-clock: Using msrs 12 and 11
+		&lt;6&gt;kvm-clock: cpu 0, msr 0:18bf901, boot clock
+		&lt;7&gt; [ffffea0000000000-ffffea0000dfffff] PMD -&gt;
+		[ffff880002200000-ffff880002ffffff] on node 0
+		&lt;4&gt;Zone PFN ranges:
+		&lt;4&gt; DMA 0x00000001 -&gt; 0x00001000
+		&lt;4&gt; DMA32 0x00001000 -&gt; 0x00100000
+		&lt;4&gt; Normal 0x00100000 -&gt; 0x00100000
+		&lt;4&gt;Movable zone start PFN for each node
+		&lt;4&gt;early_node_map[2] active PFN ranges
+		&lt;4&gt; 0: 0x00000001 -&gt; 0x0000009f
+		&lt;4&gt; 0: 0x00000100 -&gt; 0x0003fffd
+		&lt;7&gt;On node 0 totalpages: 262043
+		&lt;7&gt; DMA zone: 56 pages used for memmap
+		&lt;7&gt; DMA zone: 100 pages reserved
+		&lt;7&gt; DMA zone: 3842 pages, LIFO batch:0
+		&lt;7&gt; DMA32 zone: 3528 pages used for memmap
+		&lt;7&gt; DMA32 zone: 254517 pages, LIFO batch:31
+		&lt;6&gt;ACPI: PM-Timer IO Port: 0xb008
+		&lt;7&gt;ACPI: Local APIC address 0xfee00000
+		&lt;6&gt;ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+		&lt;6&gt;ACPI: LAPIC (acpi_id[0x01] lapic_id[0x01] enabled)
+		&lt;6&gt;ACPI: IOAPIC (id[0x02] address[0xfec00000] gsi_base[0])
+		&lt;6&gt;IOAPIC[0]: apic_id 2, version 17, address 0xfec00000, GSI 0-23
+		&lt;6&gt;ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+		&lt;6&gt;ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+		&lt;6&gt;ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+		&lt;6&gt;ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+		&lt;6&gt;ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+		&lt;7&gt;ACPI: IRQ0 used by override.
+		&lt;7&gt;ACPI: IRQ2 used by override.
+		&lt;7&gt;ACPI: IRQ5 used by override.
+		&lt;7&gt;ACPI: IRQ9 used by override.
+		&lt;7&gt;ACPI: IRQ10 used by override.
+		&lt;7&gt;ACPI: IRQ11 used by override.
+		&lt;6&gt;Using ACPI (MADT) for SMP configuration information
+		&lt;6&gt;ACPI: HPET id: 0x8086a201 base: 0xfed00000
+		&lt;6&gt;SMP: Allowing 2 CPUs, 0 hotplug CPUs
+		&lt;7&gt;nr_irqs_gsi: 24
+		&lt;6&gt;PM: Registered nosave memory: 000000000009f000 - 00000000000a0000
+		&lt;6&gt;PM: Registered nosave memory: 00000000000a0000 -
+		00000000000f0000
+		&lt;6&gt;PM: Registered nosave memory: 00000000000f0000 - 0000000000100000
+		&lt;6&gt;Allocating PCI resources starting at 40000000 (gap:
+		40000000:bffbc000)
+		&lt;6&gt;Booting paravirtualized kernel on KVM
+		&lt;6&gt;NR_CPUS:4096 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+		&lt;6&gt;PERCPU: Embedded 31 pages/cpu @ffff880001e00000 s95064 r8192 d23720 u1048576
+		&lt;6&gt;pcpu-alloc: s95064 r8192 d23720 u1048576 alloc=1*2097152
+		&lt;6&gt;pcpu-alloc: [0] 0 1
+		&lt;6&gt;kvm-clock: cpu 0, msr 0:1e16901, primary cpu clock
+		&lt;4&gt;Built 1 zonelists in Node order, mobility grouping on. Total pages: 258359
+		&lt;4&gt;Policy zone: DMA32
+		&lt;5&gt;Kernel command line: initrd=initrd.img updates BOOT_IMAGE=vmlinuz
+		&lt;6&gt;PID hash table entries: 4096 (order: 3, 32768 bytes)
+		&lt;6&gt;Checking aperture...
+		&lt;6&gt;No AGP bridge found
+		&lt;6&gt;AMD-Vi disabled by default: pass amd_iommu=on to enable
+		&lt;6&gt;Memory: 990800k/1048564k available (4935k kernel code, 392k absent, 57372k
+		reserved, 3927k data, 1220k init)
+		&lt;6&gt;Hierarchical RCU implementation.
+		&lt;6&gt;NR_IRQS:33024 nr_irqs:424
+		&lt;4&gt;Console: colour VGA+ 80x25
+		&lt;6&gt;console [tty0] enabled
+		&lt;6&gt;allocated 10485760 bytes of page_cgroup
+		&lt;6&gt;please try 'cgroup_disable=memory' option if you don't want memory cgroups
+		&lt;7&gt;hpet clockevent registered
+		&lt;6&gt;HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+		&lt;4&gt;Detected 2666.212 MHz processor.
+		&lt;6&gt;Calibrating delay loop (skipped) preset value.. 5332.42 BogoMIPS (lpj=2666212)
+		&lt;6&gt;pid_max: default: 32768 minimum: 301
+		&lt;6&gt;Security Framework initialized
+		&lt;6&gt;SELinux: Initializing.
+		&lt;7&gt;SELinux: Starting in permissive mode
+		&lt;6&gt;Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+		&lt;6&gt;Inode-cache hash table entries: 65536 (order: 7, 524288
+		bytes)
+		&lt;4&gt;Mount-cache hash table entries: 256
+		&lt;6&gt;Initializing cgroup subsys ns
+		&lt;6&gt;Initializing cgroup subsys cpuacct
+		&lt;6&gt;Initializing cgroup subsys memory
+		&lt;6&gt;Initializing cgroup subsys devices
+		&lt;6&gt;Initializing cgroup subsys freezer
+		&lt;6&gt;Initializing cgroup subsys net_cls
+		&lt;6&gt;Initializing cgroup subsys blkio
+		&lt;6&gt;mce: CPU supports 10 MCE banks
+		&lt;6&gt;Performance Events: unsupported p6 CPU model 2 no PMU driver, software events
+		only.
+		&lt;6&gt;alternatives: switching to unfair spinlock
+		&lt;6&gt;ACPI: Core revision 20090903
+		&lt;6&gt;ftrace: converting mcount calls to 0f 1f 44 00 00
+		&lt;6&gt;ftrace: allocating 20276 entries in 80 pages
+		&lt;6&gt;Setting APIC routing to flat
+		&lt;6&gt;..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+		&lt;6&gt;CPU0: Intel QEMU Virtual CPU version 0.12.5 stepping 03
+		&lt;4&gt;APIC calibration not consistent with PM-Timer: 101ms instead of 100ms
+		&lt;6&gt;APIC delta adjusted to PM-Timer: 6249984 (6314291)
+		&lt;6&gt;Booting Node 0, Processors #1 Ok.
+		&lt;6&gt;kvm-clock: cpu 1, msr 0:1f16901, secondary cpu clock
+		&lt;6&gt;Brought up 2 CPUs
+		&lt;6&gt;Total of 2 processors activated (10664.84 BogoMIPS).
+		&lt;6&gt;Testing NMI watchdog ...
+		&lt;4&gt;WARNING: CPU#0: NMI appears to be stuck (0-&gt;0)!
+		&lt;4&gt;Please report this to bugzilla.kernel.org,
+		&lt;4&gt;and attach the output of the 'dmesg' command.
+		&lt;4&gt;
+		&lt;4&gt;WARNING: CPU#1: NMI appears to be stuck (0-&gt;0)!
+		&lt;4&gt;Please report this to bugzilla.kernel.org,
+		&lt;4&gt;and attach the output of the 'dmesg' command.
+		&lt;7&gt;sizeof(vma)=200 bytes
+		&lt;7&gt;sizeof(page)=56 bytes
+		&lt;7&gt;sizeof(inode)=592 bytes
+		&lt;7&gt;sizeof(dentry)=192 bytes
+		&lt;7&gt;sizeof(ext3inode)=800 bytes
+		&lt;7&gt;sizeof(buffer_head)=104 bytes
+		&lt;7&gt;sizeof(skbuff)=232 bytes
+		&lt;7&gt;sizeof(task_struct)=2600 bytes
+		&lt;6&gt;devtmpfs: initialized
+		&lt;6&gt;regulator: core version 0.5
+		&lt;6&gt;NET: Registered protocol family 16
+		&lt;6&gt;ACPI: bus type pci registered
+		&lt;6&gt;PCI: Using configuration type 1 for base access
+		&lt;4&gt;mtrr: your CPUs had inconsistent variable MTRR settings
+		&lt;4&gt;mtrr: your CPUs had inconsistent MTRRdefType settings
+		&lt;6&gt;mtrr: probably your BIOS does not setup all CPUs.
+		&lt;6&gt;mtrr: corrected configuration.
+		&lt;4&gt;bio: create slab &lt;bio-0&gt; at 0
+		&lt;7&gt;ACPI: EC: Look up EC in DSDT
+		&lt;6&gt;ACPI: Interpreter enabled
+		&lt;6&gt;ACPI: (supports S0 S3 S4 S5)
+		&lt;6&gt;ACPI: Using IOAPIC for interrupt routing
+		&lt;6&gt;ACPI: No dock devices found.
+		&lt;6&gt;ACPI: PCI Root Bridge [PCI0] (0000:00)
+		&lt;7&gt;pci 0000:00:01.1: reg 20 io port: [0xc000-0xc00f]
+		&lt;7&gt;pci 0000:00:01.2: reg 20 io port: [0xc020-0xc03f]
+		&lt;6&gt;pci 0000:00:01.3: quirk: region b000-b03f claimed by PIIX4 ACPI
+		&lt;6&gt;pci 0000:00:01.3: quirk: region b100-b10f claimed by PIIX4
+		SMB
+		&lt;7&gt;pci 0000:00:02.0: reg 10 32bit mmio pref: [0xf0000000-0xf1ffffff]
+		&lt;7&gt;pci 0000:00:02.0: reg 14 32bit mmio: [0xf2000000-0xf2000fff]
+		&lt;7&gt;pci 0000:00:02.0: reg 30 32bit mmio pref:
+		[0xf2010000-0xf201ffff]
+		&lt;7&gt;pci 0000:00:03.0: reg 10 io port: [0xc040-0xc05f]
+		&lt;7&gt;pci 0000:00:04.0: reg 10 io port: [0xc080-0xc0bf]
+		&lt;7&gt;pci 0000:00:04.0: reg 14 32bit mmio: [0xf2020000-0xf2020fff]
+		&lt;7&gt;pci 0000:00:05.0: reg 10 io port: [0xc0c0-0xc0df]
+		&lt;7&gt;pci 0000:00:05.0: reg 14 32bit mmio: [0xf2021000-0xf2021fff]
+		&lt;7&gt;pci 0000:00:05.0: reg 30 32bit mmio pref: [0xf2030000-0xf203ffff]
+		&lt;7&gt;pci 0000:00:06.0: reg 10 io port: [0xc400-0xc7ff]
+		&lt;7&gt;pci 0000:00:06.0: reg 14 io port: [0xc800-0xc8ff]
+		&lt;7&gt;ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+		&lt;6&gt;Unable to assume PCIe control: Disabling ASPM
+		&lt;6&gt;ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+		&lt;6&gt;ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+		&lt;6&gt;ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+		&lt;6&gt;ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+		&lt;6&gt;vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+		&lt;6&gt;vgaarb: loaded
+		&lt;5&gt;SCSI subsystem initialized
+		&lt;7&gt;libata version 3.00 loaded.
+		&lt;6&gt;usbcore: registered new interface driver usbfs
+		&lt;6&gt;usbcore: registered new interface driver hub
+		&lt;6&gt;usbcore: registered new device driver usb
+		&lt;6&gt;PCI: Using ACPI for IRQ routing
+		&lt;7&gt;PCI: old code would have set cacheline size to 32 bytes, but clflush_size
+		= 64
+		&lt;7&gt;PCI: pci_cache_line_size set to 64 bytes
+		&lt;6&gt;NetLabel: Initializing
+		&lt;6&gt;NetLabel: domain hash size = 128
+		&lt;6&gt;NetLabel: protocols = UNLABELED CIPSOv4
+		&lt;6&gt;NetLabel: unlabeled traffic allowed by default
+		&lt;6&gt;hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+		&lt;6&gt;hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+		&lt;6&gt;Switching to clocksource kvm-clock
+		&lt;6&gt;pnp: PnP ACPI init
+		&lt;6&gt;ACPI: bus type pnp registered
+		&lt;6&gt;pnp: PnP ACPI: found 6 devices
+		&lt;6&gt;ACPI: ACPI bus type pnp unregistered
+		&lt;7&gt;pci_bus 0000:00: resource 0 io: [0x00-0xffff]
+		&lt;7&gt;pci_bus 0000:00: resource 1 mem: [0x000000-0xffffffffffffffff]
+		&lt;6&gt;NET: Registered protocol family 2
+		&lt;6&gt;IP route cache hash table entries: 32768 (order: 6, 262144 bytes)
+		&lt;6&gt;TCP established hash table entries: 131072 (order: 9, 2097152
+		bytes)
+		&lt;6&gt;TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+		&lt;6&gt;TCP: Hash tables configured (established 131072 bind 65536)
+		&lt;6&gt;TCP reno registered
+		&lt;6&gt;NET: Registered protocol family 1
+		&lt;6&gt;pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+		&lt;6&gt;pci 0000:00:01.0: PIIX3: Enabling Passive Release
+		&lt;6&gt;pci 0000:00:01.0: Activating ISA DMA hang workarounds
+		&lt;7&gt;pci 0000:00:02.0: Boot video device
+		&lt;6&gt;Trying to unpack rootfs image as initramfs...
+		&lt;6&gt;Freeing initrd memory: 29358k freed
+		&lt;6&gt;audit: initializing netlink socket (disabled)
+		&lt;5&gt;type=2000 audit(1294693674.574:1): initialized
+		&lt;6&gt;HugeTLB registered 2 MB page size, pre-allocated 0 pages
+		&lt;5&gt;VFS: Disk quotas dquot_6.5.2
+		&lt;4&gt;Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+		&lt;6&gt;msgmni has been set to 1992
+		&lt;7&gt;SELinux: Registering netfilter hooks
+		&lt;6&gt;alg: No test for stdrng (krng)
+		&lt;4&gt;ksign: Installing public key data
+		&lt;4&gt;Loading keyring
+		&lt;4&gt;- Added public key 9D480283FFC05098
+		&lt;4&gt;- User ID: Red Hat, Inc. (Kernel Module GPG key)
+		&lt;4&gt;- Added public key D4A26C9CCD09BEDA
+		&lt;4&gt;- User ID: Red Hat Enterprise Linux Driver Update Program
+		&lt;secalert@redhat.com&gt;
+		&lt;6&gt;Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+		&lt;6&gt;io scheduler noop registered
+		&lt;6&gt;io scheduler anticipatory registered
+		&lt;6&gt;io scheduler deadline registered
+		&lt;6&gt;io scheduler cfq registered (default)
+		&lt;6&gt;pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+		&lt;6&gt;pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+		&lt;6&gt;acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+		&lt;6&gt;acpiphp: Slot [1] registered
+		&lt;6&gt;acpiphp: Slot [2] registered
+		&lt;6&gt;acpiphp: Slot [3] registered
+		&lt;6&gt;acpiphp: Slot [4] registered
+		&lt;6&gt;acpiphp: Slot [5] registered
+		&lt;6&gt;acpiphp: Slot [6] registered
+		&lt;6&gt;acpiphp: Slot [7] registered
+		&lt;6&gt;acpiphp: Slot [8] registered
+		&lt;6&gt;acpiphp: Slot [9] registered
+		&lt;6&gt;acpiphp: Slot [10] registered
+		&lt;6&gt;acpiphp: Slot [11] registered
+		&lt;6&gt;acpiphp: Slot [12] registered
+		&lt;6&gt;acpiphp: Slot [13] registered
+		&lt;6&gt;acpiphp: Slot [14] registered
+		&lt;6&gt;acpiphp: Slot [15] registered
+		&lt;6&gt;acpiphp: Slot [16] registered
+		&lt;6&gt;acpiphp: Slot [17] registered
+		&lt;6&gt;acpiphp: Slot [18] registered
+		&lt;6&gt;acpiphp: Slot [19] registered
+		&lt;6&gt;acpiphp: Slot [20] registered
+		&lt;6&gt;acpiphp: Slot [21] registered
+		&lt;6&gt;acpiphp: Slot [22] registered
+		&lt;6&gt;acpiphp: Slot [23] registered
+		&lt;6&gt;acpiphp: Slot [24] registered
+		&lt;6&gt;acpiphp: Slot [25] registered
+		&lt;6&gt;acpiphp: Slot [26] registered
+		&lt;6&gt;acpiphp: Slot [27] registered
+		&lt;6&gt;acpiphp: Slot [28] registered
+		&lt;6&gt;acpiphp: Slot [29] registered
+		&lt;6&gt;acpiphp: Slot [30] registered
+		&lt;6&gt;acpiphp: Slot [31] registered
+		&lt;4&gt;pci-stub: invalid id string ""
+		&lt;6&gt;input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+		&lt;6&gt;ACPI: Power Button [PWRF]
+		&lt;6&gt;processor LNXCPU:00: registered as cooling_device0
+		&lt;6&gt;processor LNXCPU:01: registered as cooling_device1
+		&lt;6&gt;Non-volatile memory driver v1.3
+		&lt;6&gt;Linux agpgart interface v0.103
+		&lt;6&gt;crash memory driver: version 1.0
+		&lt;6&gt;Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+		&lt;6&gt;serial8250: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+		&lt;6&gt;brd: module loaded
+		&lt;6&gt;loop: module loaded
+		&lt;6&gt;input: Macintosh mouse button emulation as /devices/virtual/input/input1
+		&lt;6&gt;Fixed MDIO Bus: probed
+		&lt;6&gt;ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+		&lt;6&gt;ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+		&lt;6&gt;uhci_hcd: USB Universal Host Controller Interface driver
+		&lt;4&gt;ACPI: PCI Interrupt Link [LNKD] enabled at IRQ 11
+		&lt;6&gt;uhci_hcd 0000:00:01.2: PCI INT D -&gt; Link[LNKD] -&gt; GSI 11 (level, high)
+		-&gt; IRQ 11
+		&lt;7&gt;uhci_hcd 0000:00:01.2: setting latency timer to 64
+		&lt;6&gt;uhci_hcd 0000:00:01.2: UHCI Host Controller
+		&lt;6&gt;uhci_hcd 0000:00:01.2: new USB bus registered, assigned bus number 1
+		&lt;6&gt;uhci_hcd 0000:00:01.2: irq 11, io base 0x0000c020
+		&lt;6&gt;usb usb1: New USB device found, idVendor=1d6b, idProduct=0001
+		&lt;6&gt;usb usb1: New USB device strings: Mfr=3, Product=2,
+		SerialNumber=1
+		&lt;6&gt;usb usb1: Product: UHCI Host Controller
+		&lt;6&gt;usb usb1: Manufacturer: Linux 2.6.32-71.el6.x86_64 uhci_hcd
+		&lt;6&gt;usb usb1: SerialNumber: 0000:00:01.2
+		&lt;6&gt;usb usb1: configuration #1 chosen from 1 choice
+		&lt;6&gt;hub 1-0:1.0: USB hub found
+		&lt;6&gt;hub 1-0:1.0: 2 ports detected
+		&lt;6&gt;PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+		&lt;6&gt;serio: i8042 KBD port at 0x60,0x64 irq 1
+		&lt;6&gt;serio: i8042 AUX port at 0x60,0x64 irq 12
+		&lt;6&gt;mice: PS/2 mouse device common for all mice
+		&lt;6&gt;input: AT Translated Set 2 keyboard as
+		/devices/platform/i8042/serio0/input/input2
+		&lt;6&gt;rtc_cmos 00:01: rtc core: registered rtc_cmos as rtc0
+		&lt;6&gt;rtc0: alarms up to one day, 114 bytes nvram, hpet irqs
+		&lt;6&gt;cpuidle: using governor ladder
+		&lt;6&gt;cpuidle: using governor menu
+		&lt;6&gt;usbcore: registered new interface driver hiddev
+		&lt;6&gt;usbcore: registered new interface driver usbhid
+		&lt;6&gt;usbhid: v2.6:USB HID core driver
+		&lt;6&gt;TCP cubic registered
+		&lt;6&gt;Initializing XFRM netlink socket
+		&lt;6&gt;NET: Registered protocol family 17
+		&lt;4&gt;registered taskstats version 1
+		&lt;6&gt;IMA: No TPM chip found, activating TPM-bypass!
+		&lt;6&gt;rtc_cmos 00:01: setting system clock to 2011-01-10 21:07:53 UTC (1294693673)
+		&lt;6&gt;Initalizing network drop monitor service
+		&lt;6&gt;Freeing unused kernel memory: 1220k freed
+		&lt;6&gt;Write protecting the kernel read-only data: 7176k
+		&lt;6&gt;usb 1-1: new full speed USB device using uhci_hcd and address 2
+		&lt;6&gt;input: ImExPS/2 Generic Explorer Mouse as
+		/devices/platform/i8042/serio1/input/input3
+		&lt;6&gt;usb 1-1: New USB device found, idVendor=0627, idProduct=0001
+		&lt;6&gt;usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+		&lt;6&gt;usb 1-1: Product: QEMU USB Tablet
+		&lt;6&gt;usb 1-1: Manufacturer: QEMU 0.12.5
+		&lt;6&gt;usb 1-1: SerialNumber: 1
+		&lt;6&gt;usb 1-1: configuration #1 chosen from 1 choice
+		&lt;6&gt;input: QEMU 0.12.5 QEMU USB Tablet as
+		/devices/pci0000:00/0000:00:01.2/usb1/1-1/1-1:1.0/input/input4
+		&lt;6&gt;generic-usb 0003:0627:0001.0001: input,hidraw0: USB HID v0.01
+		Pointer [QEMU 0.12.5 QEMU USB Tablet] on usb-0000:00:01.2-1/input0
+		&lt;6&gt;squashfs: version 4.0 (2009/01/31) Phillip Lougher
+		&lt;6&gt;Loading iSCSI transport class v2.0-870.
+		&lt;5&gt;iscsi: registered transport (tcp)
+		&lt;6&gt;Floppy drive(s): fd0 is 1.44M
+		&lt;6&gt;FDC 0 is a S82078B
+		&lt;6&gt;BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+		&lt;6&gt;EDD information not available.
+		&lt;6&gt;input: PC Speaker as /devices/platform/pcspkr/input/input5
+		&lt;6&gt;No iBFT detected.
+		&lt;6&gt;NET: Registered protocol family 10
+		&lt;6&gt;lo: Disabled Privacy Extensions
+		&lt;7&gt;ata_piix 0000:00:01.1: version 2.13
+		&lt;7&gt;ata_piix 0000:00:01.1: setting latency timer to 64
+		&lt;6&gt;scsi0 : ata_piix
+		&lt;6&gt;scsi1 : ata_piix
+		&lt;6&gt;ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc000 irq 14
+		&lt;6&gt;ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc008 irq 15
+		&lt;27&gt;Jan 10 21:07:55 udevd-work[153]: device node '/dev/rtc'
+		already exists, link to '/dev/rtc0' will not overwrite it
+
+		&lt;7&gt;ata2.01: NODEV after polling detection
+		&lt;6&gt;ata2.00: ATAPI: QEMU DVD-ROM, 0.12.5, max UDMA/100
+		&lt;6&gt;ata2.00: configured for MWDMA2
+		&lt;5&gt;scsi 1:0:0:0: CD-ROM QEMU QEMU DVD-ROM 0.12 PQ: 0 ANSI: 5
+		&lt;4&gt;ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 10
+		&lt;6&gt;virtio-pci 0000:00:03.0: PCI INT A -&gt; Link[LNKC] -&gt; GSI 10 (level, high)
+		-&gt; IRQ 10
+		&lt;6&gt;virtio-pci 0000:00:04.0: PCI INT A -&gt; Link[LNKD] -&gt; GSI 11 (level, high)
+		-&gt; IRQ 11
+		&lt;4&gt;ACPI: PCI Interrupt Link [LNKA] enabled at IRQ 10
+		&lt;6&gt;virtio-pci 0000:00:05.0: PCI INT A -&gt; Link[LNKA] -&gt; GSI 10 (level, high)
+		-&gt; IRQ 10
+		&lt;4&gt;sr0: scsi3-mmc drive: 4x/4x xa/form2 tray
+		&lt;6&gt;Uniform CD-ROM driver Revision: 3.20
+		&lt;7&gt;sr 1:0:0:0: Attached scsi CD-ROM sr0
+		&lt;7&gt; alloc irq_desc for 24 on node -1
+		&lt;7&gt; alloc kstat_irqs on node -1
+		&lt;7&gt;virtio-pci 0000:00:04.0: irq 24 for MSI/MSI-X
+		&lt;7&gt; alloc irq_desc for 25 on node -1
+		&lt;7&gt; alloc kstat_irqs on node -1
+		&lt;7&gt;virtio-pci 0000:00:04.0: irq 25 for MSI/MSI-X
+		&lt;6&gt; vda: vda1 vda2
+		&lt;7&gt; alloc irq_desc for 26 on node -1
+		&lt;7&gt; alloc kstat_irqs on node -1
+		&lt;7&gt;virtio-pci 0000:00:05.0: irq 26 for MSI/MSI-X
+		&lt;7&gt; alloc irq_desc for 27 on node -1
+		&lt;7&gt; alloc kstat_irqs on node -1
+		&lt;7&gt;virtio-pci 0000:00:05.0: irq 27 for MSI/MSI-X
+		&lt;7&gt; alloc irq_desc for 28 on node -1
+		&lt;7&gt; alloc kstat_irqs on node -1
+		&lt;7&gt;virtio-pci 0000:00:05.0: irq 28 for MSI/MSI-X
+		&lt;5&gt;sr 1:0:0:0: Attached scsi generic sg0 type 5
+		&lt;27&gt;Jan 10 21:07:56 udevd-work[152]: device node '/dev/rtc' already exists,
+		link to '/dev/rtc0' will not overwrite it
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; NetworkManager (version
+		0.8.1-5.el6) is starting...
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; Read config file
+		/etc/NetworkManager/NetworkManager.conf
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; trying to start the
+		modem manager...
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; monitoring kernel
+		firmware directory '/lib/firmware'.
+
+		&lt;28&gt;Jan 10 21:07:56 NetworkManager[542]: ifcfg-rh: Could not get hostname:
+		failed to read /etc/sysconfig/network
+		&lt;29&gt;Jan 10 21:07:56 NetworkManager[542]: ifcfg-rh: Acquired D-Bus service
+		com.redhat.ifcfgrh1
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; Loaded plugin ifcfg-rh:
+		(c) 2007 - 2008 Red Hat, Inc. To report bugs please use the
+		NetworkManager mailing list.
+
+		&lt;29&gt;Jan 10 21:07:56 NetworkManager[542]: ifcfg-rh: parsing
+		/etc/sysconfig/network-scripts/ifcfg-eth0 ...
+		&lt;29&gt;Jan 10 21:07:56 NetworkManager[542]: ifcfg-rh: read connection 'System
+		eth0'
+		&lt;29&gt;Jan 10 21:07:56 NetworkManager[542]: ifcfg-rh: Ignoring connection
+		'System eth0' and its device due to NM_CONTROLLED/BRIDGE/VLAN.
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; WiFi
+		enabled by radio killswitch; enabled by state file
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; WWAN enabled by radio
+		killswitch; enabled by state file
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; WiMAX enabled by radio
+		killswitch; enabled by state file
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; Networking is enabled
+		by state file
+
+		&lt;27&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;error&gt; [1294693676.631670]
+		[nm-device-ethernet.c:729] real_update_permanent_hw_address(): (eth0):
+		unable to read permanent MAC address (error 0)
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; (eth0): carrier is OFF
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; (eth0):
+		new Ethernet device (driver: 'virtio_net' ifindex: 2)
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; (eth0): exported as
+		/org/freedesktop/NetworkManager/Devices/0
+
+		&lt;28&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;warn&gt; bluez error getting
+		default adapter: The name org.bluez was not provided by any .service
+		files
+
+		&lt;30&gt;Jan 10 21:07:56 NetworkManager[542]: &lt;info&gt; Trying to start the
+		supplicant...
+
+		&lt;28&gt;Jan 10 21:07:57 NetworkManager[542]: &lt;warn&gt; error requesting auth
+		for org.freedesktop.NetworkManager.enable-disable-network: (26) Remote
+		Exception invoking
+		org.freedesktop.PolicyKit1.Authority.CheckAuthorization() on
+		/org/freedesktop/PolicyKit1/Authority at name
+		org.freedesktop.PolicyKit1:
+		org.freedesktop.DBus.Error.Spawn.ExecFailed: Cannot launch daemon,
+		file not found or permissions invalid
+
+		&lt;28&gt;Jan 10 21:07:57 NetworkManager[542]: &lt;warn&gt; error requesting auth
+		for org.freedesktop.NetworkManager.sleep-wake: (26) Remote Exception
+		invoking org.freedesktop.PolicyKit1.Authority.CheckAuthorization() on
+		/org/freedesktop/PolicyKit1/Authority at name
+		org.freedesktop.PolicyKit1:
+		org.freedesktop.DBus.Error.Spawn.ExecFailed: Cannot launch daemon,
+		file not found or permissions invalid
+
+		&lt;28&gt;Jan 10 21:07:57 NetworkManager[542]: &lt;warn&gt; error requesting auth
+		for org.freedesktop.NetworkManager.enable-disable-wifi: (26) Remote
+		Exception invoking
+		org.freedesktop.PolicyKit1.Authority.CheckAuthorization() on
+		/org/freedesktop/PolicyKit1/Authority at name
+		org.freedesktop.PolicyKit1:
+		org.freedesktop.DBus.Error.Spawn.ExecFailed: Cannot launch daemon,
+		file not found or permissions invalid
+
+		&lt;28&gt;Jan 10 21:07:57 NetworkManager[542]: &lt;warn&gt; error requesting auth
+		for org.freedesktop.NetworkManager.enable-disable-wwan: (26) Remote
+		Exception invoking
+		org.freedesktop.PolicyKit1.Authority.CheckAuthorization() on
+		/org/freedesktop/PolicyKit1/Authority at name
+		org.freedesktop.PolicyKit1:
+		org.freedesktop.DBus.Error.Spawn.ExecFailed: Cannot launch daemon,
+		file not found or permissions invalid
+
+		&lt;28&gt;Jan 10 21:07:57 NetworkManager[542]: &lt;warn&gt; error requesting auth
+		for org.freedesktop.NetworkManager.use-user-connections: (26) Remote
+		Exception invoking
+		org.freedesktop.PolicyKit1.Authority.CheckAuthorization() on
+		/org/freedesktop/PolicyKit1/Authority at name
+		org.freedesktop.PolicyKit1:
+		org.freedesktop.DBus.Error.Spawn.ExecFailed: Cannot launch daemon,
+		file not found or permissions invalid
+
+		&lt;28&gt;Jan 10 21:07:57 NetworkManager[542]: &lt;warn&gt; error requesting auth
+		for org.freedesktop.NetworkManager.network-control: (26) Remote
+		Exception invoking
+		org.freedesktop.PolicyKit1.Authority.CheckAuthorization() on
+		/org/freedesktop/PolicyKit1/Authority at name
+		org.freedesktop.PolicyKit1:
+		org.freedesktop.DBus.Error.Spawn.ExecFailed: Cannot launch daemon,
+		file not found or permissions invalid
+
+		&lt;7&gt;ISO 9660 Extensions: Microsoft Joliet Level 3
+		&lt;7&gt;ISO 9660 Extensions: RRIP_1991A
+		&lt;29&gt;Jan 10 21:08:05 dbus-daemon: [system] Reloaded configuration
+		&lt;29&gt;Jan 10 21:08:05 dbus-daemon: [system] Reloaded configuration
+		&lt;29&gt;Jan 10 21:08:05 dbus-daemon: [system] Reloaded configuration
+		&lt;7&gt;SELinux: 2048 avtab hash slots, 199690 rules.
+		&lt;7&gt;SELinux: 2048 avtab hash slots, 199690 rules.
+		&lt;7&gt;SELinux: 9 users, 13 roles, 3323 types, 168 bools, 1 sens,
+		1024 cats
+		&lt;7&gt;SELinux: 77 classes, 199690 rules
+		&lt;7&gt;SELinux: Completing initialization.
+		&lt;7&gt;SELinux: Setting up existing superblocks.
+		&lt;7&gt;SELinux: initialized (dev loop0, type squashfs), not configured for labeling
+		&lt;7&gt;SELinux: initialized (dev sr0, type iso9660), uses
+		genfs_contexts
+		&lt;7&gt;SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+		&lt;7&gt;SELinux: initialized (dev tmpfs, type tmpfs), uses transition
+		SIDs
+		&lt;7&gt;SELinux: initialized (dev securityfs, type securityfs), uses genfs_contexts
+		&lt;7&gt;SELinux: initialized (dev usbfs, type usbfs), uses
+		genfs_contexts
+		&lt;7&gt;SELinux: initialized (dev selinuxfs, type selinuxfs), uses genfs_contexts
+		&lt;7&gt;SELinux: initialized (dev mqueue, type mqueue), uses
+		transition SIDs
+		&lt;7&gt;SELinux: initialized (dev hugetlbfs, type hugetlbfs), uses transition SIDs
+		&lt;7&gt;SELinux: initialized (dev devpts, type devpts), uses
+		transition SIDs
+		&lt;7&gt;SELinux: initialized (dev inotifyfs, type inotifyfs), uses genfs_contexts
+		&lt;7&gt;SELinux: initialized (dev anon_inodefs, type anon_inodefs),
+		uses genfs_contexts
+		&lt;7&gt;SELinux: initialized (dev pipefs, type pipefs), uses task SIDs
+		&lt;7&gt;SELinux: initialized (dev debugfs, type debugfs), uses
+		genfs_contexts
+		&lt;7&gt;SELinux: initialized (dev sockfs, type sockfs), uses task SIDs
+		&lt;7&gt;SELinux: initialized (dev devtmpfs, type devtmpfs), uses
+		transition SIDs
+		&lt;7&gt;SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+		&lt;7&gt;SELinux: initialized (dev proc, type proc), uses
+		genfs_contexts
+		&lt;7&gt;SELinux: initialized (dev bdev, type bdev), uses genfs_contexts
+		&lt;7&gt;SELinux: initialized (dev rootfs, type rootfs), uses
+		genfs_contexts
+		&lt;7&gt;SELinux: initialized (dev sysfs, type sysfs), uses genfs_contexts
+		&lt;5&gt;type=1403 audit(1294693686.001:2): policy loaded
+		auid=4294967295 ses=4294967295
+		&lt;7&gt;SELinux: initialized (dev fd0, type ext2), uses xattr
+		&lt;6&gt;md: raid0 personality registered for level 0
+		&lt;6&gt;md: raid1 personality registered for level 1
+		&lt;6&gt;async_tx: api initialized (async)
+		&lt;6&gt;xor: automatically using best checksumming function: generic_sse
+		&lt;6&gt; generic_sse: 9984.000 MB/sec
+		&lt;6&gt;xor: using function: generic_sse (9984.000 MB/sec)
+		&lt;4&gt;raid6: int64x1 2445 MB/s
+		&lt;4&gt;raid6: int64x2 3332 MB/s
+		&lt;4&gt;raid6: int64x4 2218 MB/s
+		&lt;4&gt;raid6: int64x8 2210 MB/s
+		&lt;4&gt;raid6: sse2x1 6773 MB/s
+		&lt;4&gt;raid6: sse2x2 8031 MB/s
+		&lt;4&gt;raid6: sse2x4 8949 MB/s
+		&lt;4&gt;raid6: using algorithm sse2x4 (8949 MB/s)
+		&lt;6&gt;md: raid6 personality registered for level 6
+		&lt;6&gt;md: raid5 personality registered for level 5
+		&lt;6&gt;md: raid4 personality registered for level 4
+		&lt;6&gt;md: raid10 personality registered for level 10
+		&lt;6&gt;md: linear personality registered for level -1
+		&lt;6&gt;device-mapper: uevent: version 1.0.3
+		&lt;6&gt;device-mapper: ioctl: 4.17.0-ioctl (2010-03-05) initialised: dm-devel@redhat.com
+		&lt;6&gt;device-mapper: multipath: version 1.1.1 loaded
+		&lt;6&gt;device-mapper: multipath round-robin: version 1.0.0 loaded
+	</binding>
+	<binding name="component">anaconda</binding>
+	<binding name="summary">Exception: This failure intentionally triggered
+	</binding>
+	<binding name="version">6.0</binding>
+	<binding name="hashmarkername">anaconda</binding>
+</report>
